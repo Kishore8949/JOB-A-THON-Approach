@@ -1,22 +1,27 @@
 # JOB-A-THON-Approach
 Approach Description
 Pre-Processing
-Converted Date variable into integers value(Count, month, day, year, hour, min, dayofweek) (i.e. Dateofjoining)
 
-One Hot Encoded categorical Value (i.e. Gender, Education_Level)
-
-##New Features (Information extraction):-
-
-Emp_tenure:- Calculated Employe tenure (number of days in the company)
-
-Min Bussiness Value:- This feature represent Min Business Value of an Employee.
+Dropped Duplicates with same 'Emp_ID', 'Age', 'Gender', 'City', 'Education_Level','Salary', 'Dateofjoining', 'Joining Designation','Designation'
 
 With the help of feature LastWorkingDate, labled the data whether an employe got churned, and I stored that information in Attrition column.
 
-I dropped few features like LastWorkingDate, MMM-YYY etc
+##New Features (Information extraction):-
 
-After that I separated test data(As panels requested Employees will be Churned or not) from training data (separated train and test data)
+Time with company
 
-Upsampled the Imbalanced Dataset using SMOTE.
+Average business done each month and Rating
 
-Finally I used Random Forest algorithm with Hyper Parameter tuning for prediction.
+Times business done
+
+reversals happened for employees
+
+zero business count
+
+Months when coverage less than salary
+
+Designation change
+
+Last rating before leaving
+
+Model Building using pycaret.
